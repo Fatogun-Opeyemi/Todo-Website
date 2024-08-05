@@ -1,0 +1,97 @@
+html{
+    overflow: hidden;
+}
+
+#forModal{
+    display: none;
+    width: 50vw;
+}
+
+#sectionForImage{
+    /* outline: 2px solid red; */
+    width: clamp(25%, 35vw, 45%);
+    height:80svh;
+    margin: 0.5rem;
+
+    img{
+        height: 100%;
+    }
+}
+
+#sectionForOthers{
+    outline: 2px solid saddlebrown;
+    /* width: clamp(25%, 32vw, 45%); */
+    width: 50%;
+    margin-left: 49vw;
+    margin-top: -82vh;
+    height: 99.5svh;
+    overflow-y: scroll;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
+}
+
+#taskList{
+    position: sticky;
+    top: 10
+}
+
+#addTask{
+    position: sticky;
+    top: 10
+}
+
+#popup-modal {
+    max-width: 90%;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:300px ) and (max-width:1024px){
+    #sectionForImage{
+        outline: 2px solid red;
+        width: clamp(75%, 95vw, 98%);
+        height:40svh;
+        margin: 0.8rem;
+        margin: 0.55rem;
+
+    
+        img{
+            height: 100%;
+        }
+    }
+
+    #sectionForOthers{
+        outline: 2px solid saddlebrown;
+        /* width: clamp(25%, 32vw, 45%); */
+        width: 95%;
+        margin-left: 0vw;
+        margin-top: 0vh;
+        height: 55svh;
+        overflow-y: scroll;
+        scroll-snap-type: none;
+        scroll-behavior: smooth;
+        margin: 0.5rem;
+        margin: 0.55rem;
+
+    }
+
+    @media (max-height:380px){
+        #sectionForImage{
+            display: none;
+        }
+
+        #sectionForOthers{
+            height: 94svh;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #popup-modal {
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}

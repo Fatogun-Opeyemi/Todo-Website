@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    max-height: 100svh;
+    /* outline: 2px solid red; */
+    margin-top: -2vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+marquee{
+    margin-top: 2.5vh;
+    font-size: clamp(1.6rem, 4vh, 2.6rem );
+    color: saddlebrown;
+}
+
+#sectionForImage{
+    height: 85svh;
+    width:45%;
+    margin: 0.5vw;
+    margin-top: 6vh;
+    /* outline: 2px solid red; */
+
+}
+
+#sectionForImage>img{
+    /* outline: 2px solid red; */
+    height: 80svh;
+    width: 60%;
+}
+
+#sectionForText{
+    width: 45%;
+    margin-left: 50vw;
+    margin-top: -75svh ;
+    /* outline: 2px solid red; */
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    
+}
+
+#sectionForText>h1{
+    /* margin: auto; */
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #fe715d;
+}
+
+#sectionForText>button{
+    color: whitesmoke;
+    height: 2.7rem;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 6vw;
+    margin-top: 9vh; */
+    background-color: #fe715d;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+}
+
+#sectionForBalloons{
+    max-height: auto;
+}
+
+#pForBalloons1{
+    /* outline: 2px solid blue; */
+    background-color:#ea6654;
+    width: 10vw;
+    border-top-left-radius: 100%;
+    padding: 8rem;
+    height: 5vh;
+    width:2.5vw;
+    margin-left: 86.13vw;
+    position: fixed;
+    bottom: 0;
+
+}
+
+@media (min-width:300px ) and (max-width:1024px){
+    #sectionForText{
+        width: 88%;
+        /* margin-left: 45vw; */
+        /* margin-top: -75svh ; */
+        /* outline: 2px solid red; */
+        margin: auto;
+        padding-top: 0rem;
+        height: 30vh;
+        gap: 5rem;
+        
+        h1{
+            font-size: 2rem;
+            margin-top: 3vh;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        
+        button{
+            margin-left: 17%;
+            /* padding: 2vw; */
+            width: 60vw;
+        }
+    }
+
+    #sectionForImage{
+        /* height: 90svh; */
+        width: 90%;
+        margin:auto;
+        margin-top: 0vh;
+        /* outline: 2px solid red; */
+        height: 50svh;
+        margin-bottom: 3vh;
+        
+        img{
+            height: 50svh;
+            margin-left:9vw;
+
+        }
+    }
+}
+
+@media (min-width:750px){
+    #sectionForImage{
+        /* outline: 2px solid red; */
+        width: 64%;
+    }
+    }
+@media (min-height:750px){
+    #sectionForText{
+        gap: 10rem;
+    }
+}
+@media (max-height:500px){
+    #sectionForText{
+        gap: 2rem;
+
+        h1{
+            font-size: 1.3rem;
+
+        }
+
+        button{
+            margin-left: 21%;
+            /* padding: 2vw; */
+            width: 50vw;
+
+            a{
+                font-size: 1rem;
+            }
+            
+
+        }
+
+    }
+    #sectionForImage{
+        width: 50%;
+    }
+}
